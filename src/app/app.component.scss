@@ -12,3 +12,16 @@
   font-weight: bold;
   color: #0E0E10;
 }
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-nav {
+  transform: rotate(-90deg);
+  margin-right: 10px;
+  color: black;
+}
