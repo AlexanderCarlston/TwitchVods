@@ -9,7 +9,7 @@
           <!-- <clr-icon class="close-nav semibold" shape="upload"></clr-icon> -->
         </div>
         <ng-container *ngIf="tenUsers && tenUsers.length > 0">
-          <user-side-nav *ngFor="let user of tenUsers" class="users-side" [user]="user"></user-side-nav>
+          <app-user-side-nav *ngFor="let user of tenUsers" [user]="user"></app-user-side-nav>
         </ng-container>
       </section>
     </nav>
