@@ -1,0 +1,15 @@
+<div class="main-container">
+  <app-nav></app-nav>
+
+  <div class="content-container">
+    <nav class="sidenav">
+      <section class="sidenav-content nav-container">
+        <p class="users-side bold-text">RECCOMENDED CHANNELS:</p>
+        <ng-container *ngIf="tenUsers && tenUsers.length > 0">
+          <user-side-nav *ngFor="let user of tenUsers" class="users-side" [user]="user"></user-side-nav>
+        </ng-container>
+      </section>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>

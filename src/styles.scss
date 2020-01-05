@@ -1,0 +1,36 @@
+.ellipsis-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0.3rem;
+}
+
+// Overwrites:
+.active {
+  color: #772CE8;
+}
+
+.m-t-0 {
+  margin-top: 0;
+}
+
+.semibold {
+  font-weight: 600 !important;
+  color: black;
+}
+
+.line-height-heading {
+  line-height: 1.2 !important;
+}
+
+.font-size-5 {
+  font-size: 1.4rem !important;
+}
+
+.overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
