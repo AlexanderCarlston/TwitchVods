@@ -9,10 +9,16 @@ img {
   max-height: 42px;
   align-content: center;
   align-self: flex-start;
+  text-decoration: none;
 }
 
 .user-text-container {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+}
+
+a:hover {
+  background: #E6E6EA;
+  color: #AAAAAA;
 }
