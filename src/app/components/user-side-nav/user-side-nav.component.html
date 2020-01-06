@@ -1,7 +1,7 @@
 <a *ngIf="userData" href="" class="users-container">
   <img [src]="userData.profile_image_url" alt="">
   <div class="user-text-container overflow-ellipsis">
-    <p class="m-t-0 semibold">{{ userData.display_name }}</p>
-    <p class="m-t-0">{{ userData.description }}</p>
+    <p class="m-t-0 semibold">{{ userData?.display_name }}</p>
+    <p class="m-t-0 nav-sub-text">{{ gameData?.name }}</p>
   </div>
 </a>

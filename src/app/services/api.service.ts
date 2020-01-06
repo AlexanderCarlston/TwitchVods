@@ -59,7 +59,7 @@ export class ApiService {
   }
 
   getGame(gameId: string) {
-    return this.http.get<TwitchResult<UserData>>(this.baseUrl + `game?id=${gameId}`, { headers: this.clientHeader });
+    return this.http.get<TwitchResult<Game>>(this.baseUrl + `games?id=${gameId}`, { headers: this.clientHeader });
   }
 
 }
