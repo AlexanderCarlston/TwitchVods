@@ -28,10 +28,12 @@ span {
   color: #772CEC !important;
 }
 
-// TODO: add dynamic border bottom
+.active {
+  border-bottom: 2px solid #772CE8;
+}
+
 .nav-text {
   font-size: .8rem;
-  border-bottom: 2px solid #772CE8;
   display: flex;
   text-decoration: none;
 }

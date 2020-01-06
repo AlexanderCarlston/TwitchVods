@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ApiService, User } from 'src/app/services/api.service';
+import { ApiService, User, UserData } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-user-side-nav',
@@ -8,14 +8,12 @@ import { ApiService, User } from 'src/app/services/api.service';
 })
 export class UserSideNavComponent implements OnInit {
   @Input() user: User;
-  userData: object;
+  userData: UserData;
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.apiService.getUser(this.user.user_id)
-    .subscribe(value => {
+    this.apiService.getUser(this.user.user_id).subscribe(value => {
       this.userData = value.data[0];
-      console.log(this.userData);
     });
   }
 

@@ -1,16 +1,17 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Video } from 'src/app/services/api.service';
 
 @Component({
-  selector: 'video-card',
+  selector: 'app-video-card',
   templateUrl: './video-card.component.html',
   styleUrls: ['./video-card.component.scss']
 })
 export class VideoCardComponent implements OnInit {
-  @Input() video: object;ß
+  @Input() video: Video;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.video)
+
   }
 
   validImgSrc(src: string) {
